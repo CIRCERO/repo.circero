@@ -1,0 +1,42 @@
+<<<<<<< HEAD
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="repository.circero" name="Circero Repo" version="2.0.1" provider-name="CIRCERO">
+    <extension point="xbmc.addon.repository" name="Circero Repo">
+        <dir>
+            <info compressed="false">https://raw.githubusercontent.com/circero/repo.circero/zips/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/circero/repo.circero/zips/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/circero/repo.circero/zips/</datadir>
+        </dir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>Circero Repo</summary>
+        <description>DESCRIPTION OF YOUR REPO HERE</description>
+        <disclaimer></disclaimer>
+        <platform>all</platform>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+    </extension>
+=======
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="repository.circero" name="Circero Repo" version="2.0.1" provider-name="CIRCERO">
+    <extension point="xbmc.addon.repository" name="Circero Repo">
+        <dir>
+            <info compressed="false">https://raw.githubusercontent.com/circero/repository.circero/zips/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/circero/repository.circero/zips/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/circero/repository.circero/zips/</datadir>
+        </dir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>Circero Repo</summary>
+        <description>DESCRIPTION OF YOUR REPO HERE</description>
+        <disclaimer></disclaimer>
+        <platform>all</platform>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+    </extension>
+>>>>>>> 7b80769ae21239fc39d655dcda02ee87a0c63697
+</addon>
