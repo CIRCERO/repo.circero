@@ -1,4 +1,4 @@
-cd ~/repo.circero
+cd C:/Users/kevng/AppData/Roaming/Kodi/addons
 git pull
 
 git python update_repo.py
