@@ -2,7 +2,7 @@
 
 # Check if we are in the right directory
 ROOT=$(pwd)
-if [[ "$ROOT" != *./addons ]]
+if [[ "$ROOT" != */repository.circero ]]
 then
   echo -e "Run this script inside the repository's root directory!"
   exit 1

@@ -21,7 +21,7 @@ class Generator:
     """
     def __init__(self):
 # Create the zips folder if it doesn't already exist
-        zips_path = ('zips')
+        zips_path = ('./zips')
         if not os.path.exists(zips_path):
             os.makedirs(zips_path)
 

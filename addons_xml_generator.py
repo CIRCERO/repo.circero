@@ -114,13 +114,13 @@ class Generator:
  
  
 def zipfolder(foldername, target_dir, zips_dir):            
-    zipobj = zipfile.ZipFile(zips_dir + foldername, 'wb', zipfile.ZIP_DEFLATED)
+    zipobj = zipfile.ZipFile(zips_dir + foldername, 'w', zipfile.ZIP_DEFLATED)
     rootlen = len(target_dir) + 1
     for base, dirs, files in os.walk(target_dir):
         for file in files:
             if not ".git" in base:
                 fn = os.path.join(base, file)
-                zipobj.write(fn, os.path.join(foldername[:-3],fn[rootlen:]))
+                zipobj.write(fn, os.path.join(foldername[:-4],fn[rootlen:]))
     zipobj.close()
                      
 if ( __name__ == "__main__" ):
@@ -154,8 +154,8 @@ if ( __name__ == "__main__" ):
         if re.search("plugin|repository|script|skin|network|program" , x):#|repository
             foldertozip = rootdir+'\\'+x
             zipfilename = x + '.zip'
-            zipfilenamefirstpart = zipfilename[:-3]
-            zipfilenamelastpart = zipfilename[len(zipfilename)-3:]
+            zipfilenamefirstpart = zipfilename[:-4]
+            zipfilenamelastpart = zipfilename[len(zipfilename)-4:]
             zipsfolder = 'zips'
             zipsfolder = os.path.join(zipsfolder,x)
             zipsfolder = os.path.normpath(zipsfolder) + os.sep
