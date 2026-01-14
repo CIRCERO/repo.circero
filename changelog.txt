@@ -1,0 +1,16 @@
+  v1.1.0 (2025-12-30)
+  - Added Primal Fetish Network scraper support
+  - Integrated with AyloAPI for Aylo/MindGeek network sites
+  - New scrapers: PrimalFetish with full scene and performer metadata
+  - Added domain mappings for primalfetishnetwork.com
+  - Updated settings to include 'primalfetish' scraper type option
+  - Enhanced documentation with integration guides
+
+  v1.0.0 (2025-12-27)
+  - Initial release
+  - Search and scrape scenes from Stash instance
+  - Support for metadata: title, description, studio, performers, tags, ratings
+  - Artwork support: thumbnails, posters, fanart
+  - Automatic NFO file creation on successful scrape
+  - Configurable settings for Stash connection and metadata options
+  - Support for API key authentication

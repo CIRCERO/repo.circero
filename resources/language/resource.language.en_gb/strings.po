@@ -1,0 +1,357 @@
+# Kodi Media Center language file
+# Addon Name: Stash
+# Addon id: metadata.stash.python
+# Addon Provider: StashApp
+msgid ""
+msgstr ""
+"Project-Id-Version: Stash\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Kodi Translation Team\n"
+"Language-Team: English (United Kingdom)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en_GB\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgctxt "#32001"
+msgid "Connection"
+msgstr ""
+
+msgctxt "#32002"
+msgid "Stash URL"
+msgstr ""
+
+msgctxt "#32003"
+msgid "API Key (optional)"
+msgstr ""
+
+msgctxt "#32004"
+msgid "Info"
+msgstr ""
+
+msgctxt "#32005"
+msgid "API Key is only required if your Stash instance has authentication enabled"
+msgstr ""
+
+msgctxt "#32010"
+msgid "Metadata Options"
+msgstr ""
+
+msgctxt "#32011"
+msgid "Include tags"
+msgstr ""
+
+msgctxt "#32012"
+msgid "Include rating"
+msgstr ""
+
+msgctxt "#32015"
+msgid "External Scraping"
+msgstr ""
+
+msgctxt "#32016"
+msgid "Auto-scrape from external sources"
+msgstr ""
+
+msgctxt "#32017"
+msgid "Confirm before applying scraped data"
+msgstr ""
+
+msgctxt "#32018"
+msgid "Info"
+msgstr ""
+
+msgctxt "#32019"
+msgid "Requires StashDB or TPDB configured in Stash settings"
+msgstr ""
+
+msgctxt "#32024"
+msgid "Preferred scraper source"
+msgstr ""
+
+msgctxt "#32025"
+msgid "Fallback to alternative source if primary fails"
+msgstr ""
+
+msgctxt "#32020"
+msgid "NFO Export"
+msgstr ""
+
+msgctxt "#32021"
+msgid "Create NFO files on successful scrape"
+msgstr ""
+
+msgctxt "#32022"
+msgid "NFO export path"
+msgstr ""
+
+msgctxt "#32023"
+msgid "Show NFO creation notifications"
+msgstr ""
+
+msgctxt "#32026"
+msgid "Scraper Type"
+msgstr ""
+
+msgctxt "#32027"
+msgid "AEBN URL"
+msgstr ""
+
+msgctxt "#32028"
+msgid "AEBN Username"
+msgstr ""
+
+msgctxt "#32029"
+msgid "AEBN Password"
+msgstr ""
+
+msgctxt "#32030"
+msgid "Web Image Search"
+msgstr ""
+
+msgctxt "#32031"
+msgid "Enable web image search (Google/Bing)"
+msgstr ""
+
+msgctxt "#32032"
+msgid "Search engine"
+msgstr ""
+
+msgctxt "#32033"
+msgid "Maximum images to download"
+msgstr ""
+
+msgctxt "#32034"
+msgid "Google Settings"
+msgstr ""
+
+msgctxt "#32035"
+msgid "Google API Key"
+msgstr ""
+
+msgctxt "#32036"
+msgid "Google Custom Search Engine ID (CX)"
+msgstr ""
+
+msgctxt "#32037"
+msgid "Bing Settings"
+msgstr ""
+
+msgctxt "#32038"
+msgid "Bing API Key"
+msgstr ""
+
+msgctxt "#32039"
+msgid "Options"
+msgstr ""
+
+msgctxt "#32040"
+msgid "Use web search only as fallback (when no local images)"
+msgstr ""
+
+msgctxt "#32041"
+msgid "Frame Extraction"
+msgstr ""
+
+msgctxt "#32042"
+msgid "Enable frame extraction from video files"
+msgstr ""
+
+msgctxt "#32043"
+msgid "Extraction method"
+msgstr ""
+
+msgctxt "#32044"
+msgid "Number of frames to extract (auto mode)"
+msgstr ""
+
+msgctxt "#32045"
+msgid "Frame storage path"
+msgstr ""
+
+msgctxt "#32046"
+msgid "Prompt to extract frames when scraping"
+msgstr ""
+
+msgctxt "#32047"
+msgid "Info"
+msgstr ""
+
+msgctxt "#32048"
+msgid "Extract frames from video files to use as poster, fanart, or thumb artwork"
+msgstr ""
+
+msgctxt "#32049"
+msgid "Extract Frame"
+msgstr ""
+
+msgctxt "#32050"
+msgid "Select time position for frame extraction"
+msgstr ""
+
+msgctxt "#32051"
+msgid "Use as Poster"
+msgstr ""
+
+msgctxt "#32052"
+msgid "Use as Fanart"
+msgstr ""
+
+msgctxt "#32053"
+msgid "Use as Thumb"
+msgstr ""
+
+msgctxt "#32054"
+msgid "Frame extracted successfully"
+msgstr ""
+
+msgctxt "#32055"
+msgid "Failed to extract frame"
+msgstr ""
+
+msgctxt "#32056"
+msgid "Extract frames from video?"
+msgstr ""
+
+msgctxt "#32057"
+msgid "Would you like to extract frames from the video file to use as artwork?"
+msgstr ""
+
+msgctxt "#32058"
+msgid "Rapidgator Download"
+msgstr ""
+
+msgctxt "#32059"
+msgid "Enable Rapidgator integration"
+msgstr ""
+
+msgctxt "#32060"
+msgid "Rapidgator Username"
+msgstr ""
+
+msgctxt "#32061"
+msgid "Rapidgator Password"
+msgstr ""
+
+msgctxt "#32062"
+msgid "Account Settings"
+msgstr ""
+
+msgctxt "#32063"
+msgid "Download folder"
+msgstr ""
+
+msgctxt "#32064"
+msgid "Auto-search when scraping"
+msgstr ""
+
+msgctxt "#32065"
+msgid "Prefer 4K quality when available"
+msgstr ""
+
+msgctxt "#32066"
+msgid "Minimum quality"
+msgstr ""
+
+msgctxt "#32067"
+msgid "Confirm before downloading"
+msgstr ""
+
+msgctxt "#32068"
+msgid "Replace original file after download"
+msgstr ""
+
+msgctxt "#32069"
+msgid "Download Options"
+msgstr ""
+
+msgctxt "#32070"
+msgid "Premium subscription required for fast downloads"
+msgstr ""
+
+msgctxt "#32071"
+msgid "Search Rapidgator"
+msgstr ""
+
+msgctxt "#32072"
+msgid "Searching for higher quality version..."
+msgstr ""
+
+msgctxt "#32073"
+msgid "Found %d results on Rapidgator"
+msgstr ""
+
+msgctxt "#32074"
+msgid "No results found on Rapidgator"
+msgstr ""
+
+msgctxt "#32075"
+msgid "Download from Rapidgator?"
+msgstr ""
+
+msgctxt "#32076"
+msgid "Quality: %s | Size: %s"
+msgstr ""
+
+msgctxt "#32077"
+msgid "Download started"
+msgstr ""
+
+msgctxt "#32078"
+msgid "Download complete"
+msgstr ""
+
+msgctxt "#32079"
+msgid "Download failed"
+msgstr ""
+
+msgctxt "#32080"
+msgid "Rapidgator login failed"
+msgstr ""
+
+msgctxt "#32081"
+msgid "Select version to download"
+msgstr ""
+
+msgctxt "#32082"
+msgid "Downloading: %s"
+msgstr ""
+
+msgctxt "#32083"
+msgid "Search for higher quality?"
+msgstr ""
+
+msgctxt "#32084"
+msgid "Would you like to search Rapidgator for a higher quality version of this video?"
+msgstr ""
+
+msgctxt "#32085"
+msgid "Primal Fetish Network"
+msgstr ""
+
+msgctxt "#32086"
+msgid "PrimalFetish Username"
+msgstr ""
+
+msgctxt "#32087"
+msgid "PrimalFetish Password"
+msgstr ""
+
+msgctxt "#32088"
+msgid "PrimalFetish login successful"
+msgstr ""
+
+msgctxt "#32089"
+msgid "PrimalFetish login failed"
+msgstr ""
+
+msgctxt "#32090"
+msgid "Fetching high-quality images..."
+msgstr ""
+
+msgctxt "#32091"
+msgid "Premium content access enabled"
+msgstr ""

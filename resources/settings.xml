@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<settings>
+    <category label="32001">
+        <setting label="32026" type="select" id="scraper_type" default="stash" values="stash|aebn|brazzers|fakehub|czechhunter|gaywire|primalfetish"/>
+        <setting label="32002" type="text" id="stash_url" default="http://localhost:9999" enable="eq(-1,stash)"/>
+        <setting label="32003" type="text" id="api_key" default="" option="hidden" enable="eq(-2,stash)"/>
+        <setting label="Connection Timeout (seconds)" type="number" id="connection_timeout" default="30" enable="eq(-3,stash)"/>
+        <setting label="Max Retry Attempts" type="number" id="max_retries" default="3" enable="eq(-4,stash)"/>
+        <setting label="32027" type="text" id="aebn_url" default="https://www.aebn.com" enable="eq(-5,aebn)"/>
+        <setting label="32028" type="text" id="aebn_username" default="" enable="eq(-6,aebn)"/>
+        <setting label="32029" type="text" id="aebn_password" default="" option="hidden" enable="eq(-7,aebn)"/>
+        <setting label="32085" type="lsep"/>
+        <setting label="32086" type="text" id="primalfetish_username" default=""/>
+        <setting label="32087" type="text" id="primalfetish_password" default="" option="hidden"/>
+        <setting label="32004" type="lsep"/>
+        <setting label="32005" type="text" enable="false" visible="false"/>
+    </category>
+    <category label="32010">
+        <setting label="32011" type="bool" id="include_tags" default="true"/>
+        <setting label="32012" type="bool" id="include_rating" default="true"/>
+        <setting label="Enable Result Caching" type="bool" id="enable_cache" default="true"/>
+        <setting label="Cache Duration (hours)" type="number" id="cache_duration" default="24" enable="eq(-1,true)"/>
+    </category>
+    <category label="32015">
+        <setting label="32016" type="bool" id="auto_scrape_external" default="false"/>
+        <setting label="32017" type="bool" id="confirm_scrape" default="true" enable="eq(-1,true)"/>
+        <setting label="32024" type="select" id="scraper_source" default="stashdb" values="stashdb|tpdb" enable="eq(-2,true)"/>
+        <setting label="32025" type="bool" id="fallback_scraper" default="true" enable="eq(-3,true)"/>
+        <setting label="32018" type="lsep"/>
+        <setting label="32019" type="text" enable="false" visible="false"/>
+    </category>
+    <category label="32020">
+        <setting label="32021" type="bool" id="create_nfo" default="true"/>
+        <setting label="32022" type="folder" id="nfo_path" default="" enable="eq(-1,true)"/>
+        <setting label="32023" type="bool" id="nfo_notification" default="true" enable="eq(-2,true)"/>
+    </category>
+    <category label="32030">
+        <setting label="32031" type="bool" id="enable_web_image_search" default="false"/>
+        <setting label="32032" type="select" id="web_search_engine" default="both" values="google|bing|both" enable="eq(-1,true)"/>
+        <setting label="32033" type="number" id="max_web_images" default="3" enable="eq(-2,true)"/>
+        <setting label="32034" type="lsep" enable="eq(-3,true)"/>
+        <setting label="32035" type="text" id="google_api_key" default="" option="hidden" enable="eq(-4,true)"/>
+        <setting label="32036" type="text" id="google_cx" default="" enable="eq(-5,true)"/>
+        <setting label="32037" type="lsep" enable="eq(-6,true)"/>
+        <setting label="32038" type="text" id="bing_api_key" default="" option="hidden" enable="eq(-7,true)"/>
+        <setting label="32039" type="lsep" enable="eq(-8,true)"/>
+        <setting label="32040" type="bool" id="web_search_fallback_only" default="true" enable="eq(-9,true)"/>
+    </category>
+    <category label="32041">
+        <setting label="32042" type="bool" id="enable_frame_extraction" default="false"/>
+        <setting label="32043" type="select" id="frame_extraction_method" default="manual" values="manual|auto" enable="eq(-1,true)"/>
+        <setting label="32044" type="number" id="auto_frame_count" default="5" enable="eq(-2,auto)" visible="eq(-2,auto)"/>
+        <setting label="32045" type="folder" id="frame_storage_path" default="" enable="eq(-3,true)"/>
+        <setting label="32046" type="bool" id="frame_prompt_on_scrape" default="true" enable="eq(-4,true)"/>
+        <setting label="32047" type="lsep" enable="eq(-5,true)"/>
+        <setting label="32048" type="text" enable="false" visible="false"/>
+    </category>
+    <category label="32058">
+        <setting label="32059" type="bool" id="enable_rapidgator" default="false"/>
+        <setting label="32060" type="text" id="rapidgator_username" default="" enable="eq(-1,true)"/>
+        <setting label="32061" type="text" id="rapidgator_password" default="" option="hidden" enable="eq(-2,true)"/>
+        <setting label="32062" type="lsep" enable="eq(-3,true)"/>
+        <setting label="32063" type="folder" id="rapidgator_download_path" default="" enable="eq(-4,true)"/>
+        <setting label="32064" type="bool" id="rapidgator_auto_search" default="false" enable="eq(-5,true)"/>
+        <setting label="32065" type="bool" id="rapidgator_prefer_4k" default="true" enable="eq(-6,true)"/>
+        <setting label="32066" type="select" id="rapidgator_min_quality" default="1080p" values="480p|720p|1080p|2160p" enable="eq(-7,true)"/>
+        <setting label="32067" type="bool" id="rapidgator_confirm_download" default="true" enable="eq(-8,true)"/>
+        <setting label="32068" type="bool" id="rapidgator_replace_original" default="false" enable="eq(-9,true)"/>
+        <setting label="32069" type="lsep" enable="eq(-10,true)"/>
+        <setting label="32070" type="text" enable="false" visible="false"/>
+    </category>
+</settings>
