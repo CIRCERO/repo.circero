@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="repository.circero" name="CIRCERO Repository" version="1.0.0" provider-name="CIRCERO">
+    <extension point="xbmc.addon.repository" name="CIRCERO Repository">
+        <dir>
+            <info compressed="false">https://raw.githubusercontent.com/CIRCERO/repo.circero/main/repo/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/CIRCERO/repo.circero/main/repo/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/CIRCERO/repo.circero/main/repo/</datadir>
+        </dir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>CIRCERO Kodi Addon Repository</summary>
+        <description>Repository for CIRCERO's Kodi addons including multi-scraper metadata addon with support for Stash, AEBN, Brazzers, FakeHub, CzechHunter, GayWire, and PrimalFetish.</description>
+        <disclaimer></disclaimer>
+        <platform>all</platform>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+    </extension>
+</addon>
