@@ -6,8 +6,14 @@ Run this to verify all dependencies are properly installed and importable
 import sys
 import os
 
-# Add lib path
-lib_path = os.path.join(os.path.dirname(__file__), 'lib')
+# Add lib path - adjust for new repository structure
+script_dir = os.path.dirname(os.path.abspath(__file__))
+repo_root = os.path.dirname(script_dir)
+lib_path = os.path.join(repo_root, 'metadata.stash.python', 'python', 'lib')
+python_path = os.path.join(repo_root, 'metadata.stash.python', 'python')
+mock_kodi_path = os.path.join(repo_root, 'metadata.stash.python', 'python', 'mock_kodi')
+sys.path.insert(0, mock_kodi_path)
+sys.path.insert(0, python_path)
 sys.path.insert(0, lib_path)
 
 print("=" * 60)

@@ -9,11 +9,13 @@ print("=" * 60)
 print("Metadata Stash Addon - File Structure Validation")
 print("=" * 60)
 
-base_path = os.path.dirname(os.path.abspath(__file__))
-python_path = os.path.join(base_path, 'python')
+base_path = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+addon_path = os.path.join(base_path, 'metadata.stash.python')
+python_path = os.path.join(addon_path, 'python')
 lib_path = os.path.join(python_path, 'lib')
 
 print("\nBase path: {}".format(base_path))
+print("Addon path: {}".format(addon_path))
 
 required_files = {
     'Core Files': [
@@ -45,10 +47,7 @@ required_files = {
         ('python/lib/stashscraper/GayWire.py', 'Gay Wire scraper'),
     ],
     'Documentation': [
-        ('INSTALLATION_COMPLETE.md', 'Installation guide'),
-        ('INTEGRATION_SUMMARY.md', 'Integration summary'),
-        ('README_FINAL.md', 'Final documentation'),
-        ('QUICK_REFERENCE.md', 'Quick reference'),
+        ('README.md', 'Addon README'),
         ('python/lib/stashscraper/README_SCRAPERS.md', 'Scraper documentation'),
     ]
 }
@@ -61,7 +60,7 @@ for category, files in required_files.items():
     print("\n[{}]".format(category))
     for rel_path, description in files:
         total_files += 1
-        full_path = os.path.join(base_path, rel_path)
+        full_path = os.path.join(addon_path, rel_path)
         exists = os.path.isfile(full_path)
         
         if exists:

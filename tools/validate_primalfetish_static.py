@@ -41,11 +41,13 @@ def check_file_contains(filepath, search_terms, description):
 
 def main():
     """Run static validation"""
-    base_dir = os.path.dirname(os.path.abspath(__file__))
+    base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    addon_path = os.path.join(base_dir, 'metadata.stash.python')
     
     print("=" * 70)
     print("Primal Fetish Network Scraper - Static Validation")
     print("Base directory: {}".format(base_dir))
+    print("Addon path: {}".format(addon_path))
     print("=" * 70)
     
     results = []
@@ -53,9 +55,9 @@ def main():
     # Check file existence
     print("\n[1] Checking file existence...")
     files_to_check = [
-        (os.path.join(base_dir, 'python', 'lib', 'stashscraper', 'PrimalFetish.py'), 
+        (os.path.join(addon_path, 'python', 'lib', 'stashscraper', 'PrimalFetish.py'), 
          'PrimalFetish.py'),
-        (os.path.join(base_dir, 'python', 'lib', 'stashscraper', 'primalfetish_adapter.py'),
+        (os.path.join(addon_path, 'python', 'lib', 'stashscraper', 'primalfetish_adapter.py'),
          'primalfetish_adapter.py'),
     ]
     
@@ -64,7 +66,7 @@ def main():
     
     # Check PrimalFetish.py content
     print("\n[2] Checking PrimalFetish.py content...")
-    pf_path = os.path.join(base_dir, 'python', 'lib', 'stashscraper', 'PrimalFetish.py')
+    pf_path = os.path.join(addon_path, 'python', 'lib', 'stashscraper', 'PrimalFetish.py')
     results.append(check_file_contains(
         pf_path,
         ['def primalfetish(obj, _):', 'primalfetish', 'primalfetishnetwork', 'scene_search'],
@@ -73,7 +75,7 @@ def main():
     
     # Check primalfetish_adapter.py content
     print("\n[3] Checking primalfetish_adapter.py content...")
-    adapter_path = os.path.join(base_dir, 'python', 'lib', 'stashscraper', 'primalfetish_adapter.py')
+    adapter_path = os.path.join(addon_path, 'python', 'lib', 'stashscraper', 'primalfetish_adapter.py')
     results.append(check_file_contains(
         adapter_path,
         ['class PrimalFetishScraper:', 'def search(self, title', 'def get_details(self, scene_id'],
@@ -82,7 +84,7 @@ def main():
     
     # Check AyloAPI integration
     print("\n[4] Checking AyloAPI domain mapping...")
-    aylo_path = os.path.join(base_dir, 'python', 'lib', 'AyloAPI', '__init__.py')
+    aylo_path = os.path.join(addon_path, 'python', 'lib', 'AyloAPI', '__init__.py')
     results.append(check_file_contains(
         aylo_path,
         ["'primalfetish'", "'primalfetishnetwork'", "primalfetishnetwork.com"],
@@ -91,7 +93,7 @@ def main():
     
     # Check main scraper.py integration
     print("\n[5] Checking scraper.py integration...")
-    scraper_path = os.path.join(base_dir, 'python', 'scraper.py')
+    scraper_path = os.path.join(addon_path, 'python', 'scraper.py')
     results.append(check_file_contains(
         scraper_path,
         [
@@ -104,7 +106,7 @@ def main():
     
     # Check settings.xml
     print("\n[6] Checking settings.xml configuration...")
-    settings_path = os.path.join(base_dir, 'resources', 'settings.xml')
+    settings_path = os.path.join(addon_path, 'resources', 'settings.xml')
     results.append(check_file_contains(
         settings_path,
         ['primalfetish'],
