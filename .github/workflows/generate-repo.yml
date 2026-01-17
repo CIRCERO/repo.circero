@@ -1,0 +1,44 @@
+name: Generate Repository
+
+on:
+  push:
+    branches:
+      - main
+    tags:
+      - 'v*'
+  release:
+    types: [published]
+  workflow_dispatch:
+
+jobs:
+  generate-repo:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+      
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+      
+      - name: Generate repository files
+        run: |
+          python tools/generate_repo.py
+      
+      - name: Commit and push repository files
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add repo/
+          git diff --staged --quiet || git commit -m "Auto-generate repository files"
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: Upload repository artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: repository-files
+          path: repo/
